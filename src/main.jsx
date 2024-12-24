@@ -10,6 +10,7 @@ import Home from './components/Home/Home.jsx';
 import Root from './components/Root/Root.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Cart from './components/Cart/Cart.jsx';
+import Details from './components/Details/Details.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path : '/cart',
         element : <Cart></Cart>
+      },
+      {
+        path : '/product/:productId',
+        element : <Details></Details>,
+        loader : () => fetch('/bookData.json')
       }
     ]
   },

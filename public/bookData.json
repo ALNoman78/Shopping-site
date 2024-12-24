@@ -2,7 +2,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "GG Marmont Matelassé Shoulder Bag",
-        "id": "443497",
+        "id": 443497,
         "review": "Iconic shoulder bag, quilted leather, Double G hardware, stylish & functional.",
         "image_link": "https://cdna.lystit.com/200/250/n/photos/mytheresa/a2573be1/gucci-black-Interlocking-G-Wool-Suit.jpeg",
         "price": 2280
@@ -10,7 +10,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Rhyton Sneaker",
-        "id": "547692",
+        "id": 547692,
         "review": "Chunky sneakers, oversized Gucci logo, bold statement piece, comfortable.",
         "image_link": "https://cdna.lystit.com/200/250/tr/photos/farfetch/eb3e8a4d/gucci-blue-Interlocking-G-Jacquard-Wool-Blazer.jpeg",
         "price": 690
@@ -18,7 +18,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Silk Scarf with Horsebit Detail",
-        "id": "387553",
+        "id": 387553,
         "review": "Luxurious silk scarf, iconic horsebit, floral print, versatile accessory.",
         "image_link": "https://cdna.lystit.com/200/250/n/photos/mytheresa/9965c9f3/gucci-multicoloured-Interlocking-G-Gingham-Wool-Jacket.jpeg",
         "price": 390
@@ -26,7 +26,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Wool Cardigan with Interlocking G",
-        "id": "575518",
+        "id": 575518,
         "review": "Cozy cardigan, soft wool, Interlocking G pattern, stylish & comfortable.",
         "image_link": "https://cdna.lystit.com/200/250/tr/photos/farfetch/a9e28159/gucci-brown-Interlocking-G-Wool-Jumper.jpeg",
         "price": 1400
@@ -34,15 +34,15 @@
     {
         "brand": "Gucci",
         "cloth_name": "Ace Sneaker",
-        "id": "547689",
+        "id": 547689,
         "review": "Classic sneaker, leather with Web stripe, comfortable & stylish.",
-        "image_link": "https://[invalid URL removed]/ace-sneaker-gucci-547689.jpg",
+        "image_link": "https://fabrilife.com/products/6194db577ef6d-square.jpg?v=20",
         "price": 590
     },
     {
         "brand": "Gucci",
         "cloth_name": "Dionysus GG Supreme Shoulder Bag",
-        "id": "400249",
+        "id": 400249,
         "review": "Iconic Dionysus bag, GG Supreme canvas, tiger head closure, stylish & sophisticated.",
         "image_link": "https://cdna.lystit.com/200/250/tr/photos/farfetch/5440c0e4/gucci-black-Interlocking-G-Print-Cotton-Hoodie.jpeg",
         "price": 2980
@@ -50,7 +50,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Gucci Belt with Double G Buckle",
-        "id": "411924",
+        "id": 411924,
         "review": "Signature belt, leather, Double G buckle, stylish & versatile.",
         "image_link": "https://cdna.lystit.com/200/250/tr/photos/farfetch/67e7f637/gucci-black-Cardigan-Mit-Gg-Motiv.jpeg",
         "price": 450
@@ -58,7 +58,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "GG Marmont Wallet on Chain",
-        "id": "443123",
+        "id": 443123,
         "review": "Chic wallet on chain, matelassé leather, Double G hardware, compact & stylish.",
         "image_link": "https://cdna.lystit.com/300/375/tr/photos/farfetch/a483d6e3/gucci-black-Interlocking-G-Suit.jpeg",
         "price": 1200
@@ -66,7 +66,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Silk Blouse with Ruffles",
-        "id": "576774",
+        "id": 576774,
         "review": "Elegant blouse, silk fabric, ruffled details, feminine & sophisticated.",
         "image_link": "https://cdna.lystit.com/300/375/n/photos/mytheresa/9176c080/gucci-grey-GG-Embossed-Wool-Cardigan.jpeg",
         "price": 1500
@@ -74,7 +74,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "GG Supreme Backpack",
-        "id": "429147",
+        "id": 429147,
         "review": "Classic backpack, GG Supreme canvas, spacious & durable.",
         "image_link": "https://cdna.lystit.com/300/375/tr/photos/cettire/d98bad7a/gucci-Black-Interlocking-G-Double-Breasted-Suit.jpeg",
         "price": 1800
@@ -82,7 +82,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Princetown Loafer",
-        "id": "413555",
+        "id": 413555,
         "review": "Iconic loafer, horsebit detail, comfortable & stylish.",
         "image_link": "https://cdna.lystit.com/300/375/tr/photos/cettire/6d7925c3/gucci-Navy-Interlocking-G-Horsebit-Embellished-Blazer.jpeg",
         "price": 790
@@ -90,7 +90,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "GG Marmont Mini Bag",
-        "id": "448054",
+        "id": 448054,
         "review": "Small & chic bag, matelassé leather, Double G hardware, perfect for evenings.",
         "image_link": "https://cdna.lystit.com/300/375/n/photos/mytheresa/67863046/gucci-blue-GG-Intarsia-Wool-blend-Cardigan.jpeg",
         "price": 1100
@@ -98,7 +98,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Gucci Sunglasses",
-        "id": "GG0035S",
+        "id": 254,
         "review": "Stylish sunglasses, oversized frame, iconic GG logo.",
         "image_link": "https://cdna.lystit.com/300/375/n/photos/mytheresa/84293c38/gucci-brown-Interlocking-G-Cotton-Jersey-T-shirt.jpeg",
         "price": 420
@@ -106,7 +106,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "GG Supreme Tote Bag",
-        "id": "414664",
+        "id": 414664,
         "review": "Spacious tote bag, GG Supreme canvas, durable & stylish.",
         "image_link": "https://cdna.lystit.com/300/375/n/photos/mytheresa/0b63a0b0/gucci-green-GG-Wool-Jacquard-Cardigan.jpeg",
         "price": 1600
@@ -114,7 +114,7 @@
     {
         "brand": "Gucci",
         "cloth_name": "Gucci Watch",
-        "id": "YA126409",
+        "id": 73524,
         "review": "Elegant watch, stainless steel, iconic Gucci details.",
         "image_link": "https://cdna.lystit.com/300/375/tr/photos/tessabit/de0dbbb8/gucci-green-Cardigan.jpeg",
         "price": 1200

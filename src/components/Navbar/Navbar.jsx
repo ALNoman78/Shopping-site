@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const list = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/'>Cart</NavLink></li>
+        <li><NavLink to='/' className='ml-4'>Home</NavLink></li>
+        <li><NavLink to='/cart'>Cart</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
-const Root = props => {
+const Root = () => {
     return (
         <div className='md:max-w-7xl mx-auto'>
             <Navbar></Navbar>

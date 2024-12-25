@@ -23,8 +23,6 @@ const Details = () => {
         storedCartList(id)
     }
 
-    // console.log(id)
-    // console.log(items);
     return (
         <div>
             <div className="flex w-full flex-col lg:flex-row my-8">

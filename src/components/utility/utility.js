@@ -15,7 +15,7 @@ const storedCartList = (id) => {
     } else {
         storedList.push(id);
         const storedCartItems = JSON.stringify(storedList);
-        localStorage.setItem("set cart data ", storedCartItems);
+        localStorage.setItem("cart-list", storedCartItems);
     }
 };
 

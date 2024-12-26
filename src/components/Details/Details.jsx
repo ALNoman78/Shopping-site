@@ -24,24 +24,80 @@ const Details = () => {
     }
 
     return (
-        <div>
-            <div className="flex w-full flex-col lg:flex-row my-8">
-                <div className="card bg-base-300 rounded-box grid flex-grow place-items-center">
-                    <img src={image_link} className='h-[450px] md:p-8' alt="" />
-                </div>
-                <div className="card rounded-box grid  flex-grow m-8">
-                    <h2 className='md:text-4xl text-xl font-bold'>{cloth_name}</h2>
-                    <p className='text-lg font-medium text-[rgba(19,19,19,0.8)] mb-4'>Price : ${price}</p>
-                    <div className='border-b-2 mb-5'></div>
-                    <h2 className='md:w-[550px] w-full text-wrap'><span className='font-bold text-lg'>Review</span>  : {review}</h2>
-                    <div className='border-b-2 my-6'></div>
-                    <div>
-                        <button onClick={() => handleAddToCart(productId)} className='btn btn-outline mr-5'>Add to Cart</button>
-                        <button className='btn btn-accent text-white'>Add to Wishlist</button>
-                        <button onClick={handleBack} className='btn btn-error hidden md: text-white ml-4'>Back</button>
+
+        <div className="flex font-sans">
+            <div className="flex-none w-48 relative">
+                <img src={image_link} loading="lazy" />
+            </div>
+            <form className="flex-auto p-6">
+                <div className="flex flex-wrap">
+                    <h1 className="flex-auto text-lg font-semibold text-slate-900">
+                        {cloth_name}
+                    </h1>
+                    <div className="text-lg font-semibold text-slate-500">
+                        ${price}
+                    </div>
+                    <div className="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+                        In stock
                     </div>
                 </div>
-            </div>
+                <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+                    <div className="space-x-2 flex text-sm">
+                        <label>
+                            <input className="sr-only peer" name="size" type="radio" value="xs" checked />
+                            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                                XS
+                            </div>
+                        </label>
+                        <label>
+                            <input className="sr-only peer" name="size" type="radio" value="s" />
+                            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                                S
+                            </div>
+                        </label>
+                        <label>
+                            <input className="sr-only peer" name="size" type="radio" value="m" />
+                            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                                M
+                            </div>
+                        </label>
+                        <label>
+                            <input className="sr-only peer" name="size" type="radio" value="l" />
+                            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                                L
+                            </div>
+                        </label>
+                        <label>
+                            <input className="sr-only peer" name="size" type="radio" value="xl" />
+                            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                                XL
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div className="flex space-x-4 mb-6 text-sm font-medium">
+                    <div className="flex-auto flex space-x-4">
+                        <button className="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+                            Buy now
+                        </button>
+                        <button onClick={() => handleAddToCart(productId)} className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+                            Add to bag
+                        </button>
+                    </div>
+                    <button className="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+                        <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <p className="text-sm text-slate-700">
+                    Free shipping on all continental US orders.
+                </p>
+            </form>
         </div>
     )
 }

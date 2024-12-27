@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 const CartDetails = ({ attier }) => {
@@ -25,6 +24,8 @@ const CartDetails = ({ attier }) => {
     )
 }
 
-CartDetails.propTypes = {}
+CartDetails.propTypes = {
+    attier: PropTypes.object.isRequired,
+}
 
 export default CartDetails

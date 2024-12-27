@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
+import  { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { getCartData } from '../utility/utility'
 import CartDetails from '../CartDetails/CartDetails'

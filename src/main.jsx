@@ -28,10 +28,10 @@ const router = createBrowserRouter([
         element: <Cart></Cart>,
         loader: () => fetch('/bookData.json')
       },
-      {
-        path : '/cart',
-        element : <Adjust></Adjust>
-      },
+      // {
+      //   // path : '/cart',
+      //   // element : <Adjust></Adjust>
+      // },gi
       {
         path: '/product/:productId',
         element: <Details></Details>,

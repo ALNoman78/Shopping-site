@@ -16,7 +16,7 @@ const Details = () => {
 
     const items = data.find((itemDetails) => itemDetails.id === id)
 
-    const { cloth_name, image_link, price, review } = items
+    const { cloth_name, image_link, price } = items
 
     const handleAddToCart = (id) => {
         // console.log('ádd to cart clicked' ,typeof id);

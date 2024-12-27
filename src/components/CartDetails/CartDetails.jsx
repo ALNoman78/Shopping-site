@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const CartDetails = ({attier}) => {
+const CartDetails = ({ attier }) => {
     const { cloth_name, image_link, price, review } = attier
     return (
         <div className='md:m-5 '>
             <div className="card bg-base-100  shadow-xl md:flex-row flex-col gap-6">
                 <figure className="md:p-10 md:w-[250px] h-auto w-10/12 mx-auto md:m-5 p-5 bg-base-200 ">
-                    <img 
+                    <img
                         src={image_link}
                         alt="Shoes"
                         className="rounded-xl w-44" />

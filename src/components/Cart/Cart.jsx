@@ -20,7 +20,7 @@ const Cart = () => {
 
     return (
         <div>
-            <h2>Cart : {cart.length}</h2>
+            <h2 className='text-3xl text-center font-medium'>Cart : {cart.length}</h2>
             {
                 cart.map((item , idx) => <CartDetails key={idx} attier={item}></CartDetails>)
             }

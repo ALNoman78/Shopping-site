@@ -11,6 +11,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Details from './components/Details/Details.jsx';
 import { ToastContainer } from 'react-toastify';
+import Adjust from './components/AdjustCM/Adjust.jsx';
 
 const router = createBrowserRouter([
   {

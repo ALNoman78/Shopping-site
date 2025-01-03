@@ -142,5 +142,13 @@
         "review": "Elegant watch, stainless steel, iconic Gucci details.",
         "image_link": "https://fabrilife.com/products/67611c88e9124-square.jpg?v=20",
         "price": 1200
+    },
+    {
+        "brand": "Gucci",
+        "cloth_name": "Fabrilife Watch",
+        "id": 3524,
+        "review": "Elegant watch, stainless steel, iconic Gucci details.",
+        "image_link": "https://fabrilife.com/products/67611c88e9124-square.jpg?v=20",
+        "price": 1200
     }
 ]

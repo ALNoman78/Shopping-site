@@ -1,12 +1,27 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { NavLink } from 'react-router-dom'
+import auth from '../../firebase.init'
 
 const Navbar = () => {
+    const provider = new GoogleAuthProvider()
+
+
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth , provider)
+        .then(result => {
+            console.log(result)
+        })
+        .catch(error => {
+            console.log('Error' , error)
+        })
+        console.log('sign in with google')
+    }
+
     const list = <>
         <li><NavLink to='/' className='ml-4'>Home</NavLink></li>
         <li><NavLink to='/cart'>Cart</NavLink></li>
     </>
+
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -41,7 +56,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn" onClick={handleGoogleSignIn}>Sign</a>
             </div>
         </div>
     )

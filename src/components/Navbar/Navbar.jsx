@@ -1,22 +1,41 @@
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { GoogleAuthProvider, signInWithPopup, signOut, TwitterAuthProvider } from 'firebase/auth'
 import { NavLink } from 'react-router-dom'
 import auth from '../../firebase.init'
+import { useState } from 'react'
 
 const Navbar = () => {
+    const [user, setUser] = useState(null)
     const provider = new GoogleAuthProvider()
+    const twitterProvider = new TwitterAuthProvider()
 
 
     const handleGoogleSignIn = () => {
-        signInWithPopup(auth , provider)
-        .then(result => {
-            console.log(result)
-        })
-        .catch(error => {
-            console.log('Error' , error)
-        })
+        signInWithPopup(auth, provider)
+            .then(result => {
+                console.log(result)
+                setUser(result.user)
+            })
+            .catch(error => {
+                console.log('Error', error)
+            })
         console.log('sign in with google')
     }
 
+    const handleSignOut = () => {
+        signOut(auth)
+            .then(() => {
+                setUser(null)
+            })
+            .catch(error => console.log(error))
+
+    }
+    const handleTwitter = () => {
+        signInWithPopup(auth, twitterProvider)
+            .then(result => {
+                setUser(result.user)
+            })
+            .catch(error => console.log(error))
+    }
     const list = <>
         <li><NavLink to='/' className='ml-4'>Home</NavLink></li>
         <li><NavLink to='/cart'>Cart</NavLink></li>
@@ -56,7 +75,22 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn" onClick={handleGoogleSignIn}>Sign</a>
+                {
+                    user && <div className='flex items-center gap-5'>
+                        <p>{user.displayName}</p>
+                        <img src={user.photoURL} className='h-14 rounded-full' alt="" />
+                    </div>
+                }
+                {
+                    user ?
+                        <div>
+                            <button className='btn' onClick={handleSignOut}>Sign Out</button>
+                        </div> :
+                        <div>
+                            <button className='btn' onClick={handleTwitter}>Sign in Twitter</button>
+                            <a className="btn" onClick={handleGoogleSignIn}>Sign in with google</a>
+                        </div>
+                }
             </div>
         </div>
     )
